@@ -100,7 +100,7 @@ public class UserDaoImpl implements UserDao
 				)
 		{
 			
-			
+			ps.setInt(1, id);
 			ResultSet rs=ps.executeQuery();
 			if(rs.next())
 			{
